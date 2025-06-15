@@ -21,6 +21,13 @@ header{
 .logo{
     height:10vh;
 }
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
 .nav-list{
     height: 10vh;
     display: flex;
@@ -201,6 +208,24 @@ hr{
     padding-top: 15px;
 }
 @media (min-width:320px)and (max-width:768px){
+ header {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 10px 20px;
+    }
+      .menu-toggle {
+        display: block;
+        align-self: flex-end;
+    }
+    .nav-list {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        display: none;
+        padding-top: 10px;
+    }
+
 .hero{
     float: none;
 }
